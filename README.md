@@ -1,6 +1,6 @@
 <img align="right" width="100" height="74" src="https://user-images.githubusercontent.com/8277210/183290025-d7b24277-dfb4-4ce1-bece-7fe0ecd5efd4.svg" />
 
-# GitHub Actions Auto Discovery
+# Actions Auto Discovery
 
 This is a Bash script that automates the process of discovering and syncing GitHub Actions with Port. It uses the Port API to create new actions or update existing ones based on your GitHub Actions workflows.
 
