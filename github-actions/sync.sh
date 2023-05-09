@@ -33,7 +33,7 @@ curl -s ${COMMON_FUNCTIONS_URL} -o "${temp_dir}/common.sh"
 source "${temp_dir}/common.sh"
 
 echo "Checking for prerequisites..."
-check_commands "helm" "kubectl" "yq" "jq"
+check_commands "yq" "jq"
 check_port_credentials "${PORT_CLIENT_ID}" "${PORT_CLIENT_SECRET}"
 
 access_token=$(curl -s --location --request POST 'https://api.getport.io/v1/auth/access_token' --header 'Content-Type: application/json' --data-raw "{

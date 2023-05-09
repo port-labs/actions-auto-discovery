@@ -8,10 +8,9 @@ This is a Bash script that automates the process of discovering and syncing GitH
 
 Before running the script, you need to ensure that you have the following prerequisites installed on your system:
 
-- `helm`
-- `kubectl`
 - `yq`
 - `jq`
+- `curl`
 
 Also, you need to have the following information ready:
 
