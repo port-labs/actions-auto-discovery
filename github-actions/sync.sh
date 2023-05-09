@@ -65,7 +65,7 @@ for repo_name in $(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.
     curl -s -H "Authorization: token $GITHUB_TOKEN" "$URL" | jq -r '.content' | base64 -d > $input_yaml_file
 
     if ! yq -e '.on.workflow_dispatch' $input_yaml_file >/dev/null 2>&1; then
-      echo "Error: yq failed to parse workflow_dispatch section in $input_yaml_file. Skipping..."
+      echo "yq didn't find workflow_dispatch section in $input_yaml_file. Skipping..."
       continue
     fi
 
